@@ -22,7 +22,7 @@ Then, use **cat** command to read readme file.
 
 The password is ```ZjLjTmM6FvvyRnrb2rfNWOZOTa6ip5If```
 
-![proof](/pics/0-1.png)
+![proof](/sandbox3/pics/0-1.png)
 
 ```console
 bandit0@bandit:~$ exit
@@ -44,7 +44,7 @@ bandit1@bandit:~$ exit
 ```
 The ```<``` operator tells the shell to read input from a file name ```-```.
 
-![proof](/pics/1-2.png)
+![proof](/sandbox3/pics/1-2.png)
 The password is ```263JGJPfgU6LtdEvgfWU1XP5yac29mFx```
 
 ---
@@ -62,7 +62,7 @@ MNk8KNH3Usiio41PRUEoDFPqfxLPlSmx
 ```
 Use ```' '``` to create a string of filename.
 
-![proof](/pics/2-3.png)
+![proof](/sandbox3/pics/2-3.png)
 The password is ```MNk8KNH3Usiio41PRUEoDFPqfxLPlSmx```
 
 ---
@@ -83,7 +83,7 @@ bandit3@bandit:~$ cat < '...Hiding-From-You'
 Use ```cd``` to change the working directory.
 Use ```ls -a``` to see all the files including hidden files.
 
-![proof](/pics/3-4.png)
+![proof](/sandbox3/pics/3-4.png)
 The password is ```2WmrDFRmJIq3IPxneAaMGhap0pFhF3NJ```
 
 ---
@@ -103,7 +103,7 @@ bandit4@bandit:~/inhere$ cat < '-file07'
 ```
 Use ```file``` to check  file types, then use ```--``` to tell the command that the next arguments are file names, then use ```*``` to check all files in the folder.
 
-![proof](/pics/4-5.png)
+![proof](/sandbox3/pics/4-5.png)
 The password is ```4oQYVPkxZOOEOO5pTW81FB8j8lxXGUQw```
 
 ---
@@ -122,7 +122,7 @@ HWasnPhtq9AVKe0dmk45nxy20cvUa6EG
 ```
 Use ```find``` to search, then use ```-type f``` to look only for files, and use ```-size 1033c``` (```c``` is for bytes) to find specifics file size.
 
-![proof](/pics/5-6.png)
+![proof](/sandbox3/pics/5-6.png)
 The password is ```HWasnPhtq9AVKe0dmk45nxy20cvUa6EG```
 
 ---
@@ -137,7 +137,7 @@ bandit6@bandit:~$ cat /var/lib/dpkg/info/bandit7.password
 morbNTDkSW6jIlUc0ymOdMaLnOlFVAaj
 ```
 Use ```find /``` to start from  root directory, then use ```-type f``` to look only for files, use ```-user bandit7```find files that are owned by the user **bandit7**, use ```-group bandit6``` search for files that belong to the group **bandit6**, use ```-size 33c``` to find specifics file size, and use ```2>/dev/null``` to ignore error messages.
-![proof](/pics/6-7.png)
+![proof](/sandbox3/pics/6-7.png)
 The password is ```morbNTDkSW6jIlUc0ymOdMaLnOlFVAaj```
 
 ---
@@ -152,7 +152,7 @@ millionth       dfwvzFQi4mU0wfNbFOe9RoWskMLg7eEc
 ```
 Use ```grep``` to search text within files, use ```-w``` ensures that ```grep``` matches whole words only, ```'data.txt'``` name of the file, and use ```-e 'millionth'``` to find specifics term.
 
-![proof](/pics/7-8.png)
+![proof](/sandbox3/pics/7-8.png)
 The password is ```dfwvzFQi4mU0wfNbFOe9RoWskMLg7eEc```
 
 ---
@@ -167,7 +167,7 @@ bandit8@bandit:~$ sort data.txt | uniq -u
 ```
 Use ```sort``` to sort lins in file in alphabetical order, use ```|``` to take output from previous command and uses it as input for the next command, use ```uniq -u``` to  filters out duplicate lines.
 
-![proof](/pics/8-9.png)
+![proof](/sandbox3/pics/8-9.png)
 The password is ```4CKMh1JI91bUIZZPXDqGanal4xvAg0JM```
 
 ---
@@ -180,7 +180,7 @@ data.txt
 bandit8@bandit:~$ strings data.txt | grep '=========='
 ```
 Use ```string``` to output human-readable texts, use ```grep '=========='``` to searches for lines that contain the specific string in the text extracted by strings.
-![proof](/pics/9-10.png)
+![proof](/sandbox3/pics/9-10.png)
 The password is ```FGUW5ilLVJrxX9kMYMmlN4MgbpfMiqey```
 
 ---
@@ -195,7 +195,7 @@ The password is dtR173fZKb0RRsDFSGsg2RWnpNVj3qRr
 ```
 Use ```base64 -d``` to decode the output text from ```cat``` command.
 
-![proof](/pics/10-11.png)
+![proof](/sandbox3/pics/10-11.png)
 The password is ```dtR173fZKb0RRsDFSGsg2RWnpNVj3qRr```
 
 ---
@@ -209,7 +209,7 @@ bandit10@bandit:~$ cat data.txt | tr 'A-Za-z' 'N-ZA-Mn-za-m'
 The password is 7x16WNeHIi5YkIhWsfFIqoognUTyj9Q4
 ```
 Assuming that this is  ***ROT13*** cipher I sought out to find command that could decrypt this and found ```tr 'A-Za-z'```. ```tr``` is command for translate or replace characters, ```'A-Za-z'``` this specifies the set of characters to be translated. ```'N-ZA-Mn-za-m'``` It maps each letter to another letter with a shift.
-![proof](/pics/11-12.png)
+![proof](/sandbox3/pics/11-12.png)
 The password is ```7x16WNeHIi5YkIhWsfFIqoognUTyj9Q4```
 
 ---
@@ -304,7 +304,7 @@ bandit12@bandit:~$ /tmp/tmp.H1dCj0UGDn$ cat data
 ```
 I repeat all of this until I found the file with **ASCII text** data type and ```cat``` it.
 
-![proof](/pics/12-13.png)
+![proof](/sandbox3/pics/12-13.png)
 The password is ```FO5dwFsc0cbaIiH0h8J2eUks2vdTDwAn```
 
 ---
@@ -324,8 +324,8 @@ After getting in Bandit14, just use simple ```cat``` followed by directories.
 bandit14@bandit:~$ cat /etc/bandit_pass/bandit14
 MU4VWeTyJk8ROof1qqmcBPaLh7lDCPvS
 ```
-![proof](/pics/13-14_1.png)
-![proof](/pics/13-14_2.png)
+![proof](/sandbox3/pics/13-14_1.png)
+![proof](/sandbox3/pics/13-14_2.png)
 
 The password is ```MU4VWeTyJk8ROof1qqmcBPaLh7lDCPvS```
 
@@ -341,7 +341,7 @@ Correct!
 ```
 I used ```nc``` or **Netcat** which is command to read or write to network connections, followed by ```localhost``` which refers to the local manchine, and then ```30000``` which is the given port number.
 
-![proof](/pics/14-15.png)
+![proof](/sandbox3/pics/14-15.png)
 
 The password is ```8xCjnmgoKbGLhHFAZlGE5Tmu4M2tKJQo```
 
@@ -364,7 +364,7 @@ kSkvUpMQ7lBYyCM4GBPvCvT1BfWRy0Dx
 ```
 I used  ```openssl``` which is command-line for managing **SSL/TLS** connections, then I used ```s_client``` to initiates an SSL/TLS connection to remote server, use ```-connect localhost:3000``` to specifies the server ```localhost``` and the port number ```30001```, and ended with ```-quiet``` to show only essential data of the connection.
 
-![proof](/pics/15-16.png)
+![proof](/sandbox3/pics/15-16.png)
 
 The password is ```kSkvUpMQ7lBYyCM4GBPvCvT1BfWRy0Dx```
 
