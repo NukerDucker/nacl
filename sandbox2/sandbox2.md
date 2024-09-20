@@ -73,7 +73,7 @@ Total number of end-devices: 10
 **d. Can the Financial Department access data from Server 3, which is located in the Marketing Department?**
 - ___**Yes**___, the Financial Department can access data from Server 3 located in the Marketing Department.
 - This access is possible because **Router 2** connects both subnets, enabling cross-subnet communication.
-- 
+  
 **e. If Router 1 (with the DHCP Server) goes down, will devices with an IP still work? Could new devices connect to the router?**
 - **Devices that already have an IP address:** These devices can still use their current IP and communicate within the network as long as their IP address doesn't expire.
 - **New devices:** New devices trying to connect won't get an IP address because the DHCP server (on Router 1) is down. Without an IP, they can't join the network unless you manually give them one.
