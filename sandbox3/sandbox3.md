@@ -250,7 +250,7 @@ bandit12@bandit:~$ /tmp/tmp.H1dCj0UGDn$ bunzip2 data.bz2
 
 ```
 then after checking and knowing that the file is **bzip2** type I renamed it using ```mv data data.bz2``` to convert it back to **.bz2** file.
-```
+```console
 bandit12@bandit:~$ /tmp/tmp.H1dCj0UGDn$ ls
 data  data.txt
 bandit12@bandit:~$ /tmp/tmp.H1dCj0UGDn$ file data
